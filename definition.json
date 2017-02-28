@@ -1,0 +1,109 @@
+{
+    "name": "tagger",
+    "serve": [
+        {
+            "name": "add",
+            "args": [
+                {
+                    "name": "id",
+                    "title": "",
+                    "type": "string",
+                    "required": true,
+                    "description": ""
+                },
+                {
+                    "name": "tag",
+                    "title": "",
+                    "type": "string",
+                    "required": true,
+                    "description": ""
+                }
+            ],
+            "description": "",
+            "returntype": "array",
+            "title": "Add"
+        },
+        {
+            "name": "remove",
+            "args": [
+                {
+                    "name": "id",
+                    "title": "",
+                    "type": "string",
+                    "required": true,
+                    "description": ""
+                },
+                {
+                    "name": "tag",
+                    "title": "",
+                    "type": "string",
+                    "required": true,
+                    "description": ""
+                }
+            ],
+            "description": "",
+            "returntype": "array",
+            "title": "Remove tag from id"
+        },
+        {
+            "name": "get",
+            "args": [
+                {
+                    "name": "id",
+                    "title": "",
+                    "type": "string",
+                    "required": true,
+                    "description": ""
+                }
+            ],
+            "description": "",
+            "returntype": "array",
+            "title": "Get tags by id"
+        },
+        {
+            "name": "list",
+            "args": [
+                {
+                    "name": "prefix",
+                    "title": "Tag prefix to search for",
+                    "type": "string",
+                    "required": false,
+                    "description": ""
+                }
+            ],
+            "description": "",
+            "returntype": "array",
+            "title": "List all tags"
+        },
+        {
+            "name": "getAllByTag",
+            "title": "Get all by tag",
+            "description": "",
+            "returntype": "array",
+            "args": [
+                {
+                    "name": "tag",
+                    "title": "Tag",
+                    "type": "string",
+                    "required": true,
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "name": "getAllByTags",
+            "title": "Get all by tags",
+            "description": "",
+            "returntype": "array",
+            "args": [
+                {
+                    "name": "tags",
+                    "title": "Tags",
+                    "type": "array",
+                    "required": true,
+                    "description": ""
+                }
+            ]
+        }
+    ]
+}
